@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-        <title>OneFrog</title>
+        <title>Vue3+.Net5辅助开发笔记 | OneFrog</title>
         <meta name="author" content="一只青蛙">
         <meta name="description" content="日常学习笔记">
         <meta name="keywords" content="">
@@ -117,88 +117,53 @@
 </nav>
                     </div>
                     <div id="main">
-                        <div id="home-head">
-    <div id="home-background" style="background-image: url(https://s1.328888.xyz/2022/05/16/qoVuO.jpg)"></div>
-    
-    <div id="home-info" class="home-info" @click="home_click">
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="loop"></span>
-        <span class="info">
-            <div class="wrap">
-                <h1>OneFrog</h1>
-                <h3>一只青蛙</h3>
-                <h5>日常学习笔记</h5>
-            </div>
-        </span>
+                        
+<div class="article">
+    <div>
+        <h1>Vue3+.Net5辅助开发笔记 </h1>
     </div>
-    
-</div>
-
-<div id="home-posts-wrap" class=>
-    <div id="home-posts">
-        <div id="posts">
-            
-
-<div class="post">
-    <a href="/2022/05/26/css3/">
-        <h2>
-            Css3
-        </h2>
-    </a>
-    <div class="category-and-date">
-        
+    <div class="info">
         <span class="date">
             <span class="icon">
                 <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
             </span>
             2022/5/26
         </span>
-    </div>
-    <div class="excerpt">
-        <div class="content" v-pre>
-            
-            <h4 id="margin"><a href="#margin" class="headerlink" title="margin"></a>margin</h4>
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        
-    </div>
-    <a href="/2022/05/26/css3/" class="go-post">
-        阅读全文
-    </a>
-</div>
-
-<div class="post">
-    <a href="/2022/05/26/vueandnet/">
-        <h2>
-            Vue3+.Net5辅助开发笔记
-        </h2>
-    </a>
-    <div class="category-and-date">
         
         <span class="category">
             <a href="/categories/辅助开发">
                 <span class="icon">
                     <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
+                </span>
                 辅助开发
             </a>
         </span>
         
-        <span class="date">
+        
+        <span class="tags">
             <span class="icon">
-                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
+                <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
             </span>
-            2022/5/26
-        </span>
-    </div>
-    <div class="excerpt">
-        <div class="content" v-pre>
             
-            <span id="more"></span>
+            <span class="tag">
+                
+                <a href="/tags/vue" style="color: #ffa2c4">
+                    vue
+                </a>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/.net5" style="color: #ffa2c4">
+                    .net5
+                </a>
+            </span>
+            
+        </span>
+        
+    </div>
+    <div class="content" v-pre>
+        <span id="more"></span>
 
 <h3 id="VUE"><a href="#VUE" class="headerlink" title="VUE"></a>VUE</h3><h4 id="新建一个vue项目"><a href="#新建一个vue项目" class="headerlink" title="新建一个vue项目"></a>新建一个vue项目</h4><p>安装脚手架<code>npm install vue-cli -g</code></p>
 <p>创建项目<code>vue init webpack &quot;项目名称&quot;</code></p>
@@ -421,317 +386,15 @@ var v_code = MemoryHelper.GetMemory(req.v_key);
 <p>获取到后台缓存的验证码就可以和前端传来的验证码进行对比，编写判断条件了</p>
 <h4 id="jwt"><a href="#jwt" class="headerlink" title="jwt"></a>jwt</h4><p>引入包<strong>Microsoft.AspNetCore.Authentication.JwtBearer</strong></p>
 
-            
-        </div>
     </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/vue" style="color: #03a9f4">
-                vue
-            </a>
-        </span>
-        
-        <span class="tag">
-            
-            <a href="/tags/.net5" style="color: #00a596">
-                .net5
-            </a>
-        </span>
-        
-    </div>
-    <a href="/2022/05/26/vueandnet/" class="go-post">
-        阅读全文
-    </a>
-</div>
-
-<div class="post">
-    <a href="/2022/05/25/sqlsugar/">
-        <h2>
-            sqlsugar+.net
-        </h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="date">
-            <span class="icon">
-                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
-            </span>
-            2022/5/25
-        </span>
-    </div>
-    <div class="excerpt">
-        <div class="content" v-pre>
-            
-            <span id="more"></span>
-
-<h4 id="关于数据库的读写分离"><a href="#关于数据库的读写分离" class="headerlink" title="关于数据库的读写分离"></a>关于数据库的读写分离</h4><p><strong>二八原则</strong></p>
-<p>20%的操作是增删改</p>
-<p>80%的操作是查询</p>
-<p>读写分离：以多个数据库引擎来承担查询的工作</p>
-<p><strong>一主多从</strong></p>
-<p>一主：增删改操作</p>
-<p>多从：多个数据库支撑查询动作</p>
-<p><strong>特点：</strong></p>
-<p>1.多个数据库</p>
-<p>2.每一个数据库存储的数据都一样多</p>
-<p>3.主库同步数据库到从库中</p>
-<p><img src="/2022/05/25/sqlsugar/笔记\笔记截图\image-20220525133152778.png" alt="image-20220525133152778"></p>
-<h4 id="下载SqlSugar"><a href="#下载SqlSugar" class="headerlink" title="下载SqlSugar"></a>下载SqlSugar</h4><p>打开Nuget包管理器，根据项目下载SqlSugar 或者 SqlSugarCore</p>
-<h4 id="SqlSugar操作数据库"><a href="#SqlSugar操作数据库" class="headerlink" title="SqlSugar操作数据库"></a>SqlSugar操作数据库</h4><p>连接配置：</p>
-<pre><code class="c#">//直接生成静态SqlSugarClient实例
-public static SqlSugarClient db = new SqlSugarClient(new ConnectionConfig()
-&#123;
-            ConnectionString = &quot;Data Source =.; Initial Catalog = FlowerDB; User ID = sa; Password = 123456&quot;,//连接字符串
-            DbType = DbType.SqlServer,//连接的数据库类型
-            IsAutoCloseConnection = true//是否自动关闭close
-&#125;);
-
-===================================================
-     
-//先配置ConnectionConfig内容，使用的时候加入实例中
-ConnectionConfig connectionConfig = new ConnectionConfig()
-&#123;
-     DbType = DbType.SqlServer,//数据库类型
-    ConnectionString = &quot;DataSource=.;InitialCatalog=SugarTest;User ID = sa;Password = 123456&quot;,//连接字符串
-IsAutoCloseConnection = true//是否自动关闭close
-&#125;;
-</code></pre>
-<p><strong>DB First(数据库先行)：</strong></p>
-<pre><code class="c#">//基于数据库(DB First)
-using (SqlSugarClient sqlSugarClient = new SqlSugarClient(connectionConfig))
-&#123;  sqlSugarClient.DbFirst.CreateClassFile(@&quot;需要生成实体类的绝对路径&quot;);
- &#125;
-</code></pre>
-<p><strong>Code First(代码先行)：</strong></p>
-<pre><code class="c#">//利用反射获取到实体类，通过sqlsugar生成表
-string nspace = &quot;Models&quot;;
-Type[] ass = Assembly.LoadFrom(&quot;bin/Debug/net5.0/Models.dll&quot;).GetTypes().Where(p =&gt; p.Namespace == nspace).ToArray();            db.CodeFirst.SetStringDefaultLength(200).InitTables(ass);
-//这里的db就是SqlSugarClient配置ConnectionConfig之后生成的实例
-//如果实体类对应的表在数据库中存在则不会生成也不会覆盖数据
-</code></pre>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        
-    </div>
-    <a href="/2022/05/25/sqlsugar/" class="go-post">
-        阅读全文
-    </a>
-</div>
-
-<div class="post">
-    <a href="/2022/05/20/aspdotnetmvc/">
-        <h2>
-            如何使用MVC的Layout布局页
-        </h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="category">
-            <a href="/categories/教程">
-                <span class="icon">
-                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
-                教程
-            </a>
-        </span>
-        
-        <span class="date">
-            <span class="icon">
-                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
-            </span>
-            2022/5/20
-        </span>
-    </div>
-    <div class="excerpt">
-        <div class="content" v-pre>
-            
-            <h3 id="什么是布局页"><a href="#什么是布局页" class="headerlink" title="什么是布局页"></a>什么是布局页</h3><p>每次新建ASP .NET MVC 项目中(.netframework)，都会存在一个<strong>Shared</strong>文件夹用来存放我们的 <strong>Layout</strong> 布局页，系统将会生成一个默认布局</p>
-<p>举例：在浏览同一种内容时，网页的头部+侧边菜单+脚部都是不会变的，作为固定样式，只有中间的内容页会发生改变</p>
-<p><img src="/2022/05/20/aspdotnetmvc/01.png"></p>
-<h3 id="如何自定义布局页"><a href="#如何自定义布局页" class="headerlink" title="如何自定义布局页"></a>如何自定义布局页</h3><p>首先右键在Shared文件中新建一个布局页，在需要改变内容的位置添加<code>@RenderBody</code>，例如：</p>
-<pre><code class="html">&lt;div&gt;
-  @RenderBody
-&lt;/div&gt;
-</code></pre>
-<p><strong>解释一下</strong>：将布局页看做母页，嵌入该位置的html页面看做子页，只要绑定了该布局页(母页)，对子页进行访问时就会插入到指定位置显示</p>
-<p>在子页的头部设置母页的路径即可：</p>
-<pre><code class="html">@&#123;
-    ViewBag.Title = &quot;xxx&quot;;
-    Layout = &quot;~/Views/Shared/_BackAdmin.cshtml&quot;;
-&#125;
-</code></pre>
-<p>同时也要在<strong>Views</strong>文件夹下的**_ViewStart.cshtml**中做出对应的修改</p>
-<p>不想使用布局页时，设置为null</p>
-<pre><code>@&#123;
-    ViewBag.Title = &quot;xxx&quot;;
-    Layout = null;
-&#125;
-</code></pre>
-
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/mvc" style="color: #00a596">
-                mvc
-            </a>
-        </span>
-        
-    </div>
-    <a href="/2022/05/20/aspdotnetmvc/" class="go-post">
-        阅读全文
-    </a>
-</div>
-
-<div class="post">
-    <a href="/2022/05/17/chexo/">
-        <h2>
-            搭建个人博客
-        </h2>
-    </a>
-    <div class="category-and-date">
-        
-        <span class="category">
-            <a href="/categories/博客">
-                <span class="icon">
-                    <svg class="fa-icon"><use xlink:href="#bookmark-solid"></use></svg>
-                博客
-            </a>
-        </span>
-        
-        <span class="date">
-            <span class="icon">
-                <svg class="fa-icon"><use xlink:href="#calendar-solid"></use></svg>
-            </span>
-            2022/5/17
-        </span>
-    </div>
-    <div class="excerpt">
-        <div class="content" v-pre>
-            
-            <p><strong><font color="HotPink" size="3.5">一个简单的搭建博客教程</font></strong></p>
-            
-        </div>
-    </div>
-    <div class="post-tags">
-        
-        <span class="icon">
-            <svg class="fa-icon"><use xlink:href="#tags-solid"></use></svg>
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a href="/tags/hexo" style="color: #00a596">
-                hexo
-            </a>
-        </span>
-        
-    </div>
-    <a href="/2022/05/17/chexo/" class="go-post">
-        阅读全文
-    </a>
-</div>
-
-             
-<div class="page-current">
-    <div class="prev">
-        
-    </div>
-    <div class="page-index">
-        
-        <span class="current">
-            1
-        </span>
-        
-        <span>
-            <a href="/page/2/">
-                <span class="page-num">
-                    2
-                </span>
-            </a>
-            
-            
-        </span>
-        
-    </div>
-    <div class="next">
-        
-        <a href="/page/2/ ">
-            <span class="page-num">
-                <svg class="fa-icon"><use xlink:href="#caret-right-solid"></use></svg>
-            </span>
-        </a>
-        
-    </div>
-</div>
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.css">
+    <div id="comment">
+        <div id="gitalk-container">
         </div>
     </div>
     
-    <div id="home-card">
-        <div id="card-div">
-    <div class="card-style" style="width: 300px">
-        <div class="avatar">
-            <img src="https://s1.328888.xyz/2022/05/19/DK73J.jpg " alt="avatar">
-        </div>
-        <div class="name">
-            一只青蛙
-        </div>
-        <div class="descriptions">
-            
-            <div class="description">
-                '热爱生活'
-            </div>
-            
-        </div>
-        <div class="icon-links">
-            
-            <span class="icon-link">
-                <a target="_blank" rel="noopener" href="https://github.com/argvchs">
-                    <i class="fa-brands fa-github fa-fw"></i>
-                </a>
-            </span>
-            
-            <span class="icon-link">
-                <a target="_blank" rel="noopener" href="http://wpa.qq.com/msgrd?v=3&uin=2018477434&site=qq&menu=yes">
-                    <i class="fa-brands fa-qq fa-fw"></i>
-                </a>
-            </span>
-            
-            <span class="icon-link">
-                <a target="_blank" rel="noopener" href="https://github.com/argvchs">
-                    <i class="fa-brands fa-weixin fa-fw"></i>
-                </a>
-            </span>
-            
-        </div>
-        <div class="friend-links">
-            
-        </div>
-    </div>
 </div>
-    </div>
-    
-</div>
-
                          
 <footer id="footer">
     <div class="footer-wrap">
@@ -792,6 +455,23 @@ Type[] ass = Assembly.LoadFrom(&quot;bin/Debug/net5.0/Models.dll&quot;).GetTypes
 		    show_site_runtime();
 		</script>
         
+<script src="https://cdn.staticfile.org/gitalk/1.7.2/gitalk.min.js"></script>
+<script>
+    var clientID = "", clientSecret = "";
+    
+    const gitalk = new Gitalk({
+        clientID: clientID,
+        clientSecret: clientSecret,
+        repo: "",
+        owner: "",
+        admin: [""],
+        language: "zh-CN",
+        id: location.pathname,
+        distractionFreeMode: true
+    })
+    gitalk.render("gitalk-container")
+</script>
+
 
     </body>
 </html>
