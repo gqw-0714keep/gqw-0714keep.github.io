@@ -8,7 +8,7 @@
         <meta name="author" content="一只青蛙">
         <meta name="description" content="日常学习笔记">
         <meta name="keywords" content="">
-        <link rel="icon" href="https://s1.328888.xyz/2022/05/19/DK73J.jpg">
+        <link rel="icon" href="https://s1.328888.xyz/2022/06/13/pyCGe.jpg">
         <script src="https://cdn.staticfile.org/instant.page/5.1.0/instantpage.min.js" type="module"></script>
         <script src="https://cdn.staticfile.org/font-awesome/6.1.1/js/all.min.js"></script>
         <link rel="stylesheet" href="/css/fonts.min.css">
@@ -147,7 +147,7 @@
             
             <span class="tag">
                 
-                <a href="/tags/sqlsugar" style="color: #ff7d73">
+                <a href="/tags/sqlsugar" style="color: #00a596">
                     sqlsugar
                 </a>
             </span>
@@ -200,7 +200,8 @@ using (SqlSugarClient sqlSugarClient = new SqlSugarClient(connectionConfig))
 <p><strong>Code First(代码先行)：</strong></p>
 <pre><code class="c#">//利用反射获取到实体类，通过sqlsugar生成表
 string nspace = &quot;Models&quot;;
-Type[] ass = Assembly.LoadFrom(&quot;bin/Debug/net5.0/Models.dll&quot;).GetTypes().Where(p =&gt; p.Namespace == nspace).ToArray();            db.CodeFirst.SetStringDefaultLength(200).InitTables(ass);
+Type[] ass = Assembly.LoadFrom(&quot;bin/Debug/net5.0/Models.dll&quot;).GetTypes().Where(p =&gt; p.Namespace == nspace).ToArray();
+db.CodeFirst.SetStringDefaultLength(200).InitTables(ass);
 //这里的db就是SqlSugarClient配置ConnectionConfig之后生成的实例
 //如果实体类对应的表在数据库中存在则不会生成也不会覆盖数据
 </code></pre>
